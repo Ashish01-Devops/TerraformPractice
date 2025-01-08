@@ -7,7 +7,7 @@ resource "aws_instance" "Dev" {
       Name = "Test6"
     }
     lifecycle {
-      ignore_changes = [ tags, ]
+      create_before_destroy = true
     }
 }
 
@@ -22,3 +22,11 @@ resource "aws_instance" "Dev" {
     # lifecycle {
     #   prevent_destroy = true
 #     }
+
+#replace_triigred_by used following combination
+# lifecycle {
+   # create_before_destroy = true
+    #ignore_changes = [
+   #   ami
+ #   ]
+ # }
