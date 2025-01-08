@@ -4,8 +4,8 @@ resource "aws_instance" "name" {
     ami = "ami-0fd05997b4dff7aac"
    
 }
-resource "aws_s3_bucket" "dependent" {
-    bucket = "ytvhshfbbc" 
+resource "aws_s3_bucket" "dev" {
+    bucket = "ytvhshfbbcsss" 
 }
 
 #terraform apply -target=aws_s3_bucket.dependent 
