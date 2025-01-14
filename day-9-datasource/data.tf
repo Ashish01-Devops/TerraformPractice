@@ -1,8 +1,8 @@
 data "provider_resource" "logical_name" {
   # arguments
 }
-provider_resource: The resource type (e.g., aws_subnet, aws_ami).
-logical_name: A unique identifier for the data source within your Terraform configuration.
+#provider_resource: The resource type (e.g., aws_subnet, aws_ami).
+#logical_name: A unique identifier for the data source within your Terraform configuration.
 
 
 
